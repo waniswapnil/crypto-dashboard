@@ -10,9 +10,12 @@ import "./assets/timcss/assets/css/nucleo-icons.css"
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Orders from './components/Orders';
 import Navbar from './components';
-import TimTable from './components/TimTable';
-import Login from './components/Login';
 import Dashboard from './components/Dashboard';
+// import '@fortawesome/fontawesome-free/css/all.min.css';
+// import 'bootstrap-css-only/css/bootstrap.min.css';
+// import 'mdbreact/dist/css/mdb.css';
+import 'ui-neumorphism/dist/index.css'
+
 
 function App() {
 return (
@@ -21,10 +24,6 @@ return (
 	<Switch>
 	
     <Route path='/orders' component={Orders}/>
-
-    <Route path='/timtable' component={TimTable}/>
-
-	<Route path='/login' component={Login}/>
 
 	<Route path='/dashboard' component={Dashboard}/>
 

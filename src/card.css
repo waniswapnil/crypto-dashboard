@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+JP:wght@100;300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  min-height: 100vh; 
+  background-color: #e8e8e8;
+}
+
+.bpi { 
+  font-family: 'Noto Sans JP';
+  margin: 0px auto;
+  padding: 10px 25px 10px 25px;  
+  color: #f88f01;
+  background-color: #30475e;  
+  border-radius: 5px;
+}
+
+.bpi a {
+  color: #f88f01;
+}
+
+.bpi__title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  border-bottom: 0px solid rgba(255,255,255, 0.1);
+}
+
+.bpi__title i {
+  font-style: normal;
+  font-size: 12px;
+}
+
+.bpi__footer {
+  display: flex;
+  font-size: 10px;  
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.bpi__status {  
+  margin-left: auto;
+}
+
+.bpi__content {
+  display: flex;
+}
+
+.bpi__group {  
+  flex: 1 1 0px; 
+  min-width: 150px;
+  margin-right: 20px;  
+}
+
+.bpi__group:last-child {
+  margin-right: 0px;  
+}
+
+.bpi__group select {
+  color: #f88f01;
+  padding: 5px;
+  background-color: #30475e;
+  border: 1px solid rgba(255,255,255, 0.5);
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;  
+  background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='20' height='20' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' fill='white'/></g></svg>") no-repeat;
+  background-position: right 5px top 50%;  
+}
+
+.bpi__group__label {
+  display: block;
+  padding: 2px 0px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bpi__group__item {
+  display: flex;
+  align-items: center;
+}
+
+.bpi--drop {
+  color: red;
+}
+
+.bpi--raise {
+  color: #17d22b;
+}

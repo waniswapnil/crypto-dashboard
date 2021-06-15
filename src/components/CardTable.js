@@ -75,27 +75,23 @@ export default class CardTable extends React.Component {
       <AnimationWrapper>
 <Table>
 <tr>
-<td>
-                <div className="img-container text-center">
-                <img src={imgbitcoin} alt="logo"/>
-                <h4 className="h4 text-white font-weight-bold text-center">{coinname}<br/>(BTC)</h4>
-                <h4 className="h4 text-white font-weight-bold text-center">Price: ${price}</h4>
-              </div>
-              </td>
-
-
-              <td>
-                  <h4 className="h4 text-white font-weight-bold">Market Cap: {(marketcap/1000000).toFixed(2)} M</h4>
-                  <h4 className="h4 text-white font-weight-bold"><CardCoinLimitCheck coinlimit={coinlimit}/></h4>
-                  <h4 className="h4 text-white font-weight-bold">Rating: 5</h4>
-              </td>
-
-              <td>
-                  <h4 className="h4 text-white font-weight-bold">Social View: Neutral</h4>
-                  <OneDayCheckPosNeg change24h={change24h}/>
-                  <SevenDaysCheckPosNeg change7d={change7d}/>
-              </td>
-              
+    <div className="container" style={{width:"100%",margin:"auto", borderRadius:"20px"}}>
+      <div className="row">
+        <div className="col logo-img" > <img src={imgbitcoin} alt="logo"/></div>
+        <div className="col"><p>{coinname}<br/>(BTC)</p></div>
+        <div className="col"><p>Price <br/>${price}</p></div>
+      </div>
+      <div className="row">
+        <div className="col"><p>Social View Neutral</p></div>
+        <div className="col"><CardCoinLimitCheck coinlimit={coinlimit}/></div>
+        <div className="col"><p>Market Cap {(marketcap/1000000).toFixed(2)} M</p></div>
+      </div>
+      <div className="row">
+        <div className="col"><p>24hr <br/> <OneDayCheckPosNeg change24h={change24h}/></p></div>
+        <div className="col"><p>7d <br/><SevenDaysCheckPosNeg change7d={change7d}/></p> </div>
+        <div className="col"><p>Rating <br/> 5</p></div>
+      </div>
+    </div>
 </tr>
 </Table>  
 					</AnimationWrapper>
